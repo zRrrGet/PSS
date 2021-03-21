@@ -5,7 +5,7 @@ class AccessLevel
 {
 public:
     enum Level{                        // types of levels of access
-      no_level, green, yellow, red
+      no_level, green, yellow, red, blue
     };
 private:
     Level level;
