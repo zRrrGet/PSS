@@ -27,9 +27,9 @@ int main() {
 
     // init employees
     const std::vector<std::string> employeeNames = {"Bulich", "Maria", "Natali", "Alexandr",
-                                        "Ivan", "Ilya", "Dmitriy"};
-    for (size_t i = 1;i <= employeeNames.size(); ++i)
-        p.lemployees.push_back(LabEmployee(employeeNames.at(i-1),
+                                        "Ivan", "Ilya", "Dmitriy", "Alberte"};
+    for (size_t i = 0;i < employeeNames.size(); ++i)
+        p.lemployees.push_back(LabEmployee(employeeNames.at(i),
                                            static_cast<LabEmployee::Lab>(i/2)));
     // adding phrases
     p.lemployees.at(0).addPhrase("The test will be easy, should be max grade");

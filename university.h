@@ -29,7 +29,7 @@ private:
     std::vector<Room> rooms; // rooms in university
     std::string name; // name of university
     unsigned long long stipend;
-    bool emergencyStatus;
+    bool emergencyStatus; // true if now is emergency
     void doDailyStuff(User &u, std::string spec); // private method for inner implementation of start(int)
 public:
     University(Pool p, std::vector<Room> r, std::string name, unsigned long long stipend);

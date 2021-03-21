@@ -34,10 +34,12 @@ void University::start(int days) // mostly, things in university are done by ran
 {
     for (int i = 1;i <= days; ++i) {
         std::cout << "Day: " << std::to_string(i) << std::endl;
+        // will today be emergency
         if (!(rand()%5)) {
             setEmergencyStatus(true);
             std::cout << "Emergency! All doors are opened" << std::endl;
         }
+
         std::cout << "<------------Guests------------>" << std::endl;
         // every user do daily stuff and specific for them things which are randomly determined
         for (Guest &a : p.guests) {
