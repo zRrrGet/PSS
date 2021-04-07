@@ -21,6 +21,8 @@ void LabEmployee::work() const
         case Lab::SE:
             std::cout << "Software Engineering";
             break;
+        default: // if not all cases of the enum are covered
+            throw std::runtime_error("In labemployee.cpp, work(): not all switch cases are covered(add cases for all enum values)");
     }
     std::cout << " laboratory..." << std::endl;
 }
